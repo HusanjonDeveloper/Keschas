@@ -21,15 +21,21 @@ namespace Keschas
 
             System.Console.WriteLine("Keschas says:");
             kescha.Greet(userName);
+
             kasee.Greet(userName);
             System.Console.WriteLine("Kasee says:");
+
             Console.WriteLine("Enter your age"); // Yoshingizni kiriting
             string agesString = Console.ReadLine();
 
             Console.WriteLine("converting...");
+
             int userAge = Convert.ToInt32(agesString);
+
             Console.WriteLine($"Successfully convertiSng! {userAge}");
+
             kescha.CalculetAgeDifferenceWithNoReturn(userAge);
+
             int AgeDifference = userAge - kescha.Age;
             //Console.WriteLine($"the difference between your and Kescha's age is: {kescha.AgeDifference} "); // sizning  va keschaning orasidagi farq
             kescha.PrintAgeDifference();
