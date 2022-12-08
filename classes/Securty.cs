@@ -1,8 +1,8 @@
 namespace Keschas.classes
 {
-    class Securty
+    public   class Security
     {
-        public void ChekPassword()
+        public void CheckPassword()
         {
             string Password ="";
 
