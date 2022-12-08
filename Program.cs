@@ -28,6 +28,8 @@ namespace Keschas
             Console.WriteLine("Enter your age"); // Yoshingizni kiriting
             string agesString = Console.ReadLine();
 
+            kasee.Greet2(userName);
+
             Console.WriteLine("converting...");
 
             int userAge = Convert.ToInt32(agesString);
