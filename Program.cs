@@ -38,9 +38,7 @@ namespace Keschas
                 int userAge = Convert.ToInt32(agesString);
 
                 Console.WriteLine($"Successfully convertiSng! {userAge}");
-
                 kescha.CalculetAgeDifferenceWithNoReturn(userAge);
-
                 int AgeDifference = userAge - kescha.Age;
                 //Console.WriteLine($"the difference between your and Kescha's age is: {kescha.AgeDifference} "); // sizning  va keschaning orasidagi farq
                 kescha.PrintAgeDifference();
@@ -49,13 +47,22 @@ namespace Keschas
                 //Metods
 
                 kescha.TellAboutFriends(userName, userAge);
+
                 Console.ReadKey();
+
             }
             catch (FormatException formatException)
             {
                 Console.WriteLine($"Error was thrown. Message:{formatException.Message}");
             }
             Console.WriteLine("Progrom ended...");
+            /*
+           catch (Exception exception)
+            {
+               Console.WriteLine("Bu xolda xatolikni o'zi topadi");
+            }
+            */
+
         }
 
     }
