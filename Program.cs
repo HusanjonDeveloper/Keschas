@@ -4,48 +4,58 @@ using Keschas.classes;
 
 namespace Keschas
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            Security security = new Security();
-            security.CheckPassword();
+            try
+            {
 
-            Bird kescha = new Bird(name: "Kescha", age: 3);
-            animals kasee = new Pet(name: "Kasee", age: 5);
-            // Polymorphism - Mavzu
 
-            Console.WriteLine("Enter your name: "); // ismingizni kiriting
-            string userName = Console.ReadLine();
+                Security security = new Security();
+                security.CheckPassword();
 
-            System.Console.WriteLine("Keschas says:");
-            kescha.Greet(userName);
+                Bird kescha = new Bird(name: "Kescha", age: 3);
+                animals kasee = new Pet(name: "Kasee", age: 5);
+                // Polymorphism - Mavzu
 
-            kasee.Greet(userName);
-            System.Console.WriteLine("Kasee says:");
+                Console.WriteLine("Enter your name: "); // ismingizni kiriting
+                string userName = Console.ReadLine();
 
-            Console.WriteLine("Enter your age"); // Yoshingizni kiriting
-            string agesString = Console.ReadLine();
+                System.Console.WriteLine("Keschas says:");
+                kescha.Greet(userName);
 
-            kasee.Greet2(userName);
+                kasee.Greet(userName);
+                System.Console.WriteLine("Kasee says:");
 
-            Console.WriteLine("converting...");
+                Console.WriteLine("Enter your age"); // Yoshingizni kiriting
+                string agesString = Console.ReadLine();
 
-            int userAge = Convert.ToInt32(agesString);
+                kasee.Greet2(userName);
 
-            Console.WriteLine($"Successfully convertiSng! {userAge}");
+                Console.WriteLine("converting...");
 
-            kescha.CalculetAgeDifferenceWithNoReturn(userAge);
+                int userAge = Convert.ToInt32(agesString);
 
-            int AgeDifference = userAge - kescha.Age;
-            //Console.WriteLine($"the difference between your and Kescha's age is: {kescha.AgeDifference} "); // sizning  va keschaning orasidagi farq
-            kescha.PrintAgeDifference();
-            //  teach-if
-            kescha.CopeirAge(userAge);
-            //Metods
+                Console.WriteLine($"Successfully convertiSng! {userAge}");
 
-            kescha.TellAboutFriends(userName, userAge);
-            Console.ReadKey();
+                kescha.CalculetAgeDifferenceWithNoReturn(userAge);
+
+                int AgeDifference = userAge - kescha.Age;
+                //Console.WriteLine($"the difference between your and Kescha's age is: {kescha.AgeDifference} "); // sizning  va keschaning orasidagi farq
+                kescha.PrintAgeDifference();
+                //  teach-if
+                kescha.CopeirAge(userAge);
+                //Metods
+
+                kescha.TellAboutFriends(userName, userAge);
+                Console.ReadKey();
+            }
+            catch (FormatException formatException)
+            {
+                Console.WriteLine($"Error was thrown. Message:{formatException.Message}");
+            }
+            Console.WriteLine("Progrom ended...");
         }
 
     }
