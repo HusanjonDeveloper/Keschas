@@ -14,10 +14,17 @@ namespace Keschas
                 security.CheckPassword();
 
                 Bird kescha = new Bird(name: "Kescha", age: 3);
-                animals kasee = new Pet(name: "Kasee", age: 5);
+                Pet kasee = new Pet(name: "Kasee", age: 5);
+
+                kescha.TypeBrid = Enums.BridType.Dog;
+                kasee.TypePet = Enums.PetType.Cat;
+
 
                 Console.WriteLine("kescha was created:" + kescha.CreatedDeTe);
                 Console.WriteLine("kasee was create:" + kasee.CreatedDeTe);
+
+                Console.WriteLine("Kescha_ " + kescha.TypeBrid);
+                Console.WriteLine("Kasee_ " + kasee.TypePet);
 
                 Console.WriteLine("Enter your name: "); // ismingizni kiriting
                 string userName = Console.ReadLine();

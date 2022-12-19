@@ -1,7 +1,11 @@
+using Keschas.Enums;
+
 namespace Keschas.classes
 {
     public class Pet : animals
     {
+        public PetType TypePet { get; set; }
+
         public Pet(string name, int age)
           : base(name, age)
         {
