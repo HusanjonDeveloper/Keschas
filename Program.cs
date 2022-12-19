@@ -10,8 +10,6 @@ namespace Keschas
         {
             try
             {
-
-
                 Security security = new Security();
                 security.CheckPassword();
 

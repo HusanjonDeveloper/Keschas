@@ -1,6 +1,6 @@
 namespace Keschas.classes
 {
-    public abstract class animals
+    public abstract class animals : IAnimal
     {
         public string Name { get; set; }
 
