@@ -16,30 +16,24 @@ namespace Keschas.classes
 
         public animals(string name, int age)
         {
-
             Name = name;
             Age = age;
-
         }
 
         public animals(string name,
         int userAge,
         int animalAge)// bu nomi ovorloding => yana bir xil kansturuktor - faqat bunga Parametor berib yuboriladi
         {
-
             Name = name;
             Age = animalAge;
 
             //AgeDifference = CalculetAgeDifference(userAge,animalAge);
-
             CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
-
         }
         public abstract void Greet2(string userName);
         public void PrintAgeDifference()
         {
-            Console.WriteLine($"the difference between your and {Name}'s age is: {AgeDifference} "); // sizning  va keschaning orasidagi farq
-
+            Console.WriteLine($"the difference between your and {Name}'s age is: {AgeDifference} "); // sizning  va keschaning orasidagi farq            
         }
 
         public void CopeirAge(int userAge)
