@@ -1,11 +1,13 @@
 namespace Keschas.classes
 {
-    public abstract class animals : IAnimal
+    public abstract class animals : IAnimal, IPet
     {
         public string Name { get; set; }
 
         public int Age { get; set; }
+
         public int AgeDifference { get; set; }
+
         public DateTimeOffset CreatedDeTe { get; set; }
 
         public animals()
