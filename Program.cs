@@ -15,8 +15,7 @@ namespace Keschas
             animals kasee = new Pet(name: "Kasee", age: 5);
             // Polymorphism - Mavzu
 
-
-            Console.WriteLine("Enter your name ex:(John): "); // ismingizni kiriting
+            Console.WriteLine("Enter your name: "); // ismingizni kiriting
             string userName = Console.ReadLine();
 
             System.Console.WriteLine("Keschas says:");

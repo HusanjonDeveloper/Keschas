@@ -65,9 +65,9 @@ namespace Keschas.classes
             Console.WriteLine("Let me tell you about my friends.");
             string[] friendsName = new String[3];
             friendsName[0] = "Kascha";
-            friendsName[1] = "Vasya";
+            friendsName[1] = "kasee";
             friendsName[2] = userName;
-            int[] friendsAge = { 25, 20, userAge };
+            int[] friendsAge = { 3, 5, userAge };
             string[] adrs = { "Andjon", "Fargona", "Namangan" };
 
             //Console.WriteLine($"{friendsName [0]} is {friendsAge [0]} year old! is adrs {adrs [0]}"); 
