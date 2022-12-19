@@ -17,7 +17,9 @@ namespace Keschas
 
                 Bird kescha = new Bird(name: "Kescha", age: 3);
                 animals kasee = new Pet(name: "Kasee", age: 5);
-                // Polymorphism - Mavzu
+
+                Console.WriteLine("kescha was created:" + kescha.CreatedDeTe);
+                Console.WriteLine("kasee was create:" + kasee.CreatedDeTe);
 
                 Console.WriteLine("Enter your name: "); // ismingizni kiriting
                 string userName = Console.ReadLine();

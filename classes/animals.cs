@@ -6,18 +6,21 @@ namespace Keschas.classes
 
         public int Age { get; set; }
         public int AgeDifference { get; set; }
+        public DateTimeOffset CreatedDeTe { get; set; }
 
         public animals()
         {
             Name = "No name";
             Age = 0;
             AgeDifference = 0;
+            CreatedDeTe = DateTimeOffset.Now;
         }
 
         public animals(string name, int age)
         {
             Name = name;
             Age = age;
+            CreatedDeTe = DateTimeOffset.Now;
         }
 
         public animals(string name,
@@ -29,6 +32,7 @@ namespace Keschas.classes
 
             //AgeDifference = CalculetAgeDifference(userAge,animalAge);
             CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
+            CreatedDeTe = DateTimeOffset.Now;
         }
         public abstract void Greet2(string userName);
         public void PrintAgeDifference()
