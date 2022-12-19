@@ -55,13 +55,11 @@ namespace Keschas
             {
                 Console.WriteLine($"Error was thrown. Message:{formatException.Message}");
             }
-            Console.WriteLine("Progrom ended...");
-            /*
-           catch (Exception exception)
+            catch (Exception exception)
             {
-               Console.WriteLine("Bu xolda xatolikni o'zi topadi");
+                Console.WriteLine("Erorr was thron. Type is Not known");
             }
-            */
+            Console.WriteLine("Progrom ended...");
 
         }
 
