@@ -1,7 +1,6 @@
 ﻿using System;
 // Teach Keschas
 using Keschas.classes;
-
 namespace Keschas
 {
     internal class Program
