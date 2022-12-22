@@ -45,13 +45,8 @@ namespace Keschas
 
                 Console.WriteLine($"Successfully convertiSng! {userAge}");
                 kescha.CalculetAgeDifferenceWithNoReturn(userAge);
-                int AgeDifference = userAge - kescha.Age;
-                //Console.WriteLine($"the difference between your and Kescha's age is: {kescha.AgeDifference} "); // sizning  va keschaning orasidagi farq
                 kescha.PrintAgeDifference();
-                //  teach-if
                 kescha.CopeirAge(userAge);
-                //Metods
-
                 kescha.TellAboutFriends(userName, userAge);
 
                 Console.ReadKey();
