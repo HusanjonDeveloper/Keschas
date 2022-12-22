@@ -43,7 +43,6 @@ namespace Keschas
 
                 int userAge = Convert.ToInt32(agesString);
 
-                Console.WriteLine($"Successfully convertiSng! {userAge}");
                 kescha.CalculetAgeDifferenceWithNoReturn(userAge);
                 kescha.PrintAgeDifference();
                 kescha.CopeirAge(userAge);
