@@ -4,5 +4,4 @@ namespace Keschas.Enums
     {
         Cat,
     }
-
 }

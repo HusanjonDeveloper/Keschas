@@ -1,17 +1,17 @@
 namespace Keschas.classes
 {
-    public   class Security
+    public class Security
     {
         public void CheckPassword()
         {
-            string Password ="";
+            string Password = "";
 
-            do 
+            do
             {
                 System.Console.WriteLine("Enter password");
                 Password = Console.ReadLine();
                 Console.Clear();
-            }while(Password !="0");
+            } while (Password != "0");
         }
     }
 }
