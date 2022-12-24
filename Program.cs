@@ -59,6 +59,7 @@ namespace Keschas
             {
                 Console.WriteLine("Erorr was thron. Type is Not known");
             }
+            
             Console.WriteLine("Progrom ended...");
             Console.WriteLine("please try again");
 
