@@ -28,7 +28,7 @@ namespace Keschas
                 Console.WriteLine("Kescha_ " + kescha.TypeBrid);
                 Console.WriteLine("Kasee_ " + kasee.TypePet);
 
-                Console.WriteLine("Enter your name: "); // ismingizni kiriting
+                Console.WriteLine("Enter your name: ");
                 string userName = Console.ReadLine();
 
                 System.Console.WriteLine("Keschas says:");
@@ -37,7 +37,7 @@ namespace Keschas
                 kasee.Greet(userName);
                 System.Console.WriteLine("Kasee says:");
 
-                Console.WriteLine("Enter your age"); // Yoshingizni kiriting
+                Console.WriteLine("Enter your age");
                 string agesString = Console.ReadLine();
 
                 kasee.Greet2(userName);
