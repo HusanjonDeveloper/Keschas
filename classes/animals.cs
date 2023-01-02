@@ -89,6 +89,7 @@ namespace Keschas.classes
         }
         public int CalculetAgeDifference(int userAge, int animalAge)
         {//private => yani qiymat qaytarmaydi hechkim bilmasin
+
             return userAge - animalAge;
 
         }
