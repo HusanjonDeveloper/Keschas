@@ -36,7 +36,9 @@ namespace Keschas.classes
             CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
             CreatedDeTe = DateTimeOffset.Now;
         }
+        
         public abstract void Greet2(string userName);
+
         public void PrintAgeDifference()
         {
             Console.WriteLine($"the difference between your and {Name}'s age is: {AgeDifference} "); // sizning  va keschaning orasidagi farq            
