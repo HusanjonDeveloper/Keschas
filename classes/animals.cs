@@ -33,7 +33,9 @@ namespace Keschas.classes
             Age = animalAge;
 
             //AgeDifference = CalculetAgeDifference(userAge,animalAge);
+           
             CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
+           
             CreatedDeTe = DateTimeOffset.Now;
         }
         
