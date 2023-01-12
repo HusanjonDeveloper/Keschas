@@ -19,7 +19,7 @@ namespace Keschas.classes
 
         public override void Greet2(string userName)
         {
-            System.Console.WriteLine("Abstracted Meted implemented");
+            Console.WriteLine("Abstracted Meted implemented");
         }
     }
 }

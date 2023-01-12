@@ -8,9 +8,10 @@ namespace Keschas.classes
 
             do
             {
-                System.Console.WriteLine("Enter password");
+                Console.WriteLine("Enter password");
                 Password = Console.ReadLine();
                 Console.Clear();
+
             } while (Password != "0");
         }
     }
