@@ -33,17 +33,17 @@ namespace Keschas.classes
             Age = animalAge;
 
             //AgeDifference = CalculetAgeDifference(userAge,animalAge);
-           
+
             CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
-           
+
             CreatedDeTe = DateTimeOffset.Now;
         }
-        
+
         public abstract void Greet2(string userName);
 
         public void PrintAgeDifference()
         {
-            Console.WriteLine($"the difference between your and {Name}'s age is: {AgeDifference} "); // sizning  va keschaning orasidagi farq            
+            Console.WriteLine($"the difference between your and {Name}'s age is: {AgeDifference} ");
         }
 
         public void CopeirAge(int userAge)
@@ -61,11 +61,8 @@ namespace Keschas.classes
                 Console.WriteLine("you are younger!");
             }
         }
-
         public void TellAboutFriends(string userName, int userAge)
         {
-
-
             Console.WriteLine("Let me tell you about my friends.");
             string[] friendsName = new String[3];
             friendsName[0] = "Kascha";
@@ -93,9 +90,7 @@ namespace Keschas.classes
         }
         public int CalculetAgeDifference(int userAge, int animalAge)
         {//private => yani qiymat qaytarmaydi hechkim bilmasin
-
             return userAge - animalAge;
-
         }
         public virtual void Greet(string userName)
         {
@@ -107,9 +102,7 @@ namespace Keschas.classes
         }
         private void CalculetAgeDifferenceWithNoReturn(int userAge, int animalAge)
         { // void => qiymat qaytarmaydi
-
             AgeDifference = userAge - animalAge;
         }
-
     }
 }

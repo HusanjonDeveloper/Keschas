@@ -5,13 +5,11 @@ namespace Keschas.classes
         public void CheckPassword()
         {
             string Password = "";
-
             do
             {
                 Console.WriteLine("Enter password");
                 Password = Console.ReadLine();
                 Console.Clear();
-
             } while (Password != "0");
         }
     }

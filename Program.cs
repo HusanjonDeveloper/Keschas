@@ -1,9 +1,5 @@
 ﻿using System;
-
-// Teach Keschas
-
 using Keschas.classes;
-
 namespace Keschas
 {
     internal class Program
@@ -52,7 +48,6 @@ namespace Keschas
                 kescha.TellAboutFriends(userName, userAge);
 
                 Console.ReadKey();
-
             }
             catch (FormatException formatException)
             {
