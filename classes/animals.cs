@@ -27,12 +27,10 @@ namespace Keschas.classes
 
         public animals(string name,
         int userAge,
-        int animalAge)// bu nomi ovorloding => yana bir xil kansturuktor - faqat bunga Parametor berib yuboriladi
+        int animalAge)
         {
             Name = name;
             Age = animalAge;
-
-            //AgeDifference = CalculetAgeDifference(userAge,animalAge);
 
             CalculetAgeDifferenceWithNoReturn(userAge, animalAge);
 
@@ -71,10 +69,6 @@ namespace Keschas.classes
             int[] friendsAge = { 3, 5, userAge };
             string[] adrs = { "Andjon", "Fargona", "Namangan" };
 
-            //Console.WriteLine($"{friendsName [0]} is {friendsAge [0]} year old! is adrs {adrs [0]}"); 
-            //Console.WriteLine($"{friendsName [1]} is {friendsAge [1]} year old! is adrs {adrs [1]}");
-            //Console.WriteLine($"{friendsName [2]} is {friendsAge [2]} year old! is adrs {adrs [2]}");
-
             for (int i = 0; i < friendsName.Length; i++)
             {
                 Console.WriteLine($"{friendsName[i]} is {friendsAge[i]}");
@@ -89,7 +83,7 @@ namespace Keschas.classes
             AgeDifference = userAge - Age;
         }
         public int CalculetAgeDifference(int userAge, int animalAge)
-        {//private => yani qiymat qaytarmaydi hechkim bilmasin
+        {
             return userAge - animalAge;
         }
         public virtual void Greet(string userName)
@@ -101,7 +95,7 @@ namespace Keschas.classes
             Console.WriteLine($"Hello,{userName}");
         }
         private void CalculetAgeDifferenceWithNoReturn(int userAge, int animalAge)
-        { // void => qiymat qaytarmaydi
+        {
             AgeDifference = userAge - animalAge;
         }
     }
