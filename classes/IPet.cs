@@ -1,4 +1,5 @@
 
+
 namespace Keschas.classes
 {
     public interface IPet
