@@ -1,3 +1,4 @@
+
 namespace Keschas.classes
 {
     public abstract class animals : IAnimal, IPet
